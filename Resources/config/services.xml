@@ -5,11 +5,11 @@
     xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
 
     <services>
-        <service id="JK\MoneyBundle\Form\Type\MoneyType" public="false">
+        <service id="JK\MoneyBundle\Form\Type\MoneyType" public="true" class="JK\MoneyBundle\Form\Type\MoneyType">
             <argument></argument>
             <tag name="form.type" />
         </service>
-        <service id="JK\MoneyBundle\Twig\MoneyExtension" public="false">
+        <service id="JK\MoneyBundle\Twig\MoneyExtension" public="true" class="JK\MoneyBundle\Twig\MoneyExtension">
             <argument></argument>
             <tag name="twig.extension" />
         </service>
